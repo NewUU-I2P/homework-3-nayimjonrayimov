@@ -3,18 +3,18 @@
 std::string problemSolution3(float height, char S) {
     // write your code here
 
-cout << "Enter your sex (M or F) and height, correspondingly:\n ";
-cin >> S >> height;
+//cout << "Enter your sex (M or F) and height, correspondingly:\n ";
+//cin >> S >> height;
 if ( (S == 'M' && height>=1.85) || (S == 'F' && height>=1.75))
-cout << "Tall\n";
+return "Tall";
 else if ( (S == 'M' && height>=1.70) || (S== 'F' && height>=1.60))
-cout << "Normal\n";
+return "Normal";
 else if ((S == 'M' && height<1.70) || (S == 'F' && height<1.60))
-cout << "Short\n";
+return "Short";
 else
-cout << "Invalid output";
+return "Invalid output";
 
-    return 0;
+
 
 
     // use return to return your result
