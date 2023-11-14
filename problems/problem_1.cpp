@@ -1,20 +1,17 @@
 void problemSolution1(float consumed_water) {
     float cost;
     // write your code here
-int a;
-cout << "Enter the consumption\n";
-cin >> cost;
-if (a < 0)
-cout << "Invalid value\n";
-else if (a >= 0 && a<= 30)
-cost= 13 + p * 0.4;
-else if (a>30 && a<= 50)
-cost = 13 + 30 * 0.4 + (p - 30) * 0.12;
-else if (a>50 && a<=60)
-cost = 13 + 30 * 0.4 + 20 * 0.12 + (p-50) *0.4;
+//cout << "Enter the consumption\n";
+//cin >> cost;
+if (consumed_water >= 0 && consumed_water<= 30)
+cost= 13 + consumed_water * 0.4;
+else if (consumed_water>30 && consumed_water<= 50)
+cost = 13 + 30 * 0.4 + (consumed_water-30) * 0.12;
+else if (consumed_water>50 && consumed_water<=60)
+cost = 13 + 30 * 0.4 + 20 * 0.12 + (consumed_water-50) *0.4;
 else 
-cost = 13 + 30 * 0.4 + 20 * 0.12 + 10 * 1.4 + (p - 60) * 1.5;
-cout << "The total cost is: " << cost << endl;
+cost = 13 + 30 * 0.4 + 20 * 0.12 + 10 * 1.4 + (consumed_water - 60) * 1.5;
+//cout << "The total cost is: " << cost << endl;
 
 
 
