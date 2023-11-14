@@ -2,7 +2,7 @@ float problemSolution5(float x, float y, char operation) {
    float result;
    // write your code here
 //cout << "First number: " << endl;
-cin >>x;
+//cin >>x;
 //cout << "Second number: " << endl;
 //cin >>y;
 //cout <<"Enter operation: ";
